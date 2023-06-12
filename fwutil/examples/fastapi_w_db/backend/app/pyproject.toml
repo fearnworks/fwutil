@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "app"
+version = "0.0.1"
+description = "app description"
+authors = [{name = "author", email="author@example.com"}]
+dependencies = [
+    "uvicorn~=0.11.3",
+    "fastapi~=0.68.0",
+    "python-multipart~=0.0.5",
+    "pydantic[email]~=1.8.1",
+    "Jinja2~=3.0.1",
+    "SQLAlchemy~=1.4.3",
+    "alembic~=1.6.5",
+    "pytest~=6.2.5",
+    "requests~=2.26.0",
+    "gunicorn~=20.1.0",
+    "passlib",
+    "python-jose",
+    "tenacity",
+    "python-dotenv"
+]
+
+[tool.setuptools]
+py-modules= ["app", "alembic"]

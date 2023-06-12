@@ -1,0 +1,6 @@
+seaborn
+plotly-express
+dash
+jupyter-dash
+ipykernel
+matplotlib
